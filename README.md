@@ -1,4 +1,4 @@
-# ITERlike_equilibrium_dataset
+# ITER-like equilibrium dataset
 
 ### Description
 This repo contains a Collection of ~80k synthetic equilibria of an ITER-like device to develop Machine-Learning-based surrogate models of 2D plasma equilibrium. The equilibrium dataset has been generated with the codes IET [1] and FRIDA [2]. 
