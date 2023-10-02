@@ -3,7 +3,6 @@ This repo contains a Collection of ~90k synthetic equilibria of an ITER-like dev
 
 ### Citations
 Please cite the following papers:
-
 ```
 @article{abate2019inverse,
   title={An inverse equilibrium tool to define axisymmetric plasma equilibria},
@@ -15,6 +14,8 @@ Please cite the following papers:
   year={2019},
   publisher={IOP Publishing}
 }
+```
+```
 @article{bonotto2022coupled,
   title={A coupled FEM-BEM approach for the solution of the free-boundary axi-symmetric plasma equilibrium problem},
   author={Bonotto, M and Abate, D and Bettini, P and Villone, F and others},
