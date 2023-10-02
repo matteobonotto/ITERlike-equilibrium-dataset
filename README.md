@@ -4,15 +4,6 @@ This repo contains a Collection of ~90k synthetic equilibria of an ITER-like dev
 ### Citations
 Please cite the following papers:
 
-
-Some basic Git commands are:
-```
-git status
-git add
-git commit
-```
-
-
 ```
 @article{abate2019inverse,
   title={An inverse equilibrium tool to define axisymmetric plasma equilibria},
