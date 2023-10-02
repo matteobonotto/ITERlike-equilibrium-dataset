@@ -3,11 +3,13 @@
 ### Description
 This repo contains a Collection of ~80k synthetic equilibria of an ITER-like device to develop Machine-Learning-based surrogate models of 2D plasma equilibrium. The equilibrium dataset has been generated with the codes IET [1] and FRIDA [2]. 
 
-[Full dataset (81986 equilibria)](https://drive.google.com/file/d/1893SIrenrQRAdiz9sMF1mp7H3FfgutFd/view?usp=sharing)
+![Alt text](../fig.geometry.PNG)
 
-[Sample dataset (500 equilibria)](https://drive.google.com/file/d/1-5KP7_OYIvDD_QXvIr5sDihVxZx1qJCN/view?usp=sharing)
 
-![Alt text](../fig.geometry.PNG?raw=true "Title")
+### Consume
+- [Full dataset (81986 equilibria)](https://drive.google.com/file/d/1893SIrenrQRAdiz9sMF1mp7H3FfgutFd/view?usp=sharing)
+- [Sample dataset (500 equilibria)](https://drive.google.com/file/d/1-5KP7_OYIvDD_QXvIr5sDihVxZx1qJCN/view?usp=sharing)
+
 
 
 ### Citations
