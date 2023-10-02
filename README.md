@@ -4,6 +4,7 @@ This repo contains a Collection of ~90k synthetic equilibria of an ITER-like dev
 ## Citations
 Please cite the following papers:
 
+```
 @article{abate2019inverse,
   title={An inverse equilibrium tool to define axisymmetric plasma equilibria},
   author={Abate, Domenico and Bettini, Paolo},
@@ -23,5 +24,5 @@ Please cite the following papers:
   pages={27--59},
   year={2022}
 }
-
+```
 
