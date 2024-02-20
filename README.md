@@ -14,7 +14,18 @@ This repo contains a Collection of 81986 synthetic equilibria of an ITER-like de
 
 
 ### Citations
-Please cite the following papers:
+If you are using these data, we ask you to give us a citation!! Here are the papers:
+```
+@article{bonotto2022coupled,
+  title={A coupled FEM-BEM approach for the solution of the free-boundary axi-symmetric plasma equilibrium problem},
+  author={Bonotto, M and Abate, D and Bettini, P and Villone, F and others},
+  journal={Commun. Comput. Phys.},
+  volume={31},
+  number={1},
+  pages={27--59},
+  year={2022}
+}
+```
 ```
 @article{abate2019inverse,
   title={An inverse equilibrium tool to define axisymmetric plasma equilibria},
@@ -27,15 +38,5 @@ Please cite the following papers:
   publisher={IOP Publishing}
 }
 ```
-```
-@article{bonotto2022coupled,
-  title={A coupled FEM-BEM approach for the solution of the free-boundary axi-symmetric plasma equilibrium problem},
-  author={Bonotto, M and Abate, D and Bettini, P and Villone, F and others},
-  journal={Commun. Comput. Phys.},
-  volume={31},
-  number={1},
-  pages={27--59},
-  year={2022}
-}
-```
+
 
