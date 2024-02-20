@@ -8,8 +8,8 @@ This repo contains a Collection of ~80k synthetic equilibria of an ITER-like dev
 
 
 ### Consume
-- [Full dataset (81986 equilibria, 8.6GB)](https://drive.google.com/file/d/1Gn_OrMzxPRkTk-i77--HiWmWZyd8i8ue/view?usp=sharing)
-- [Sample dataset (500 equilibria, 50MB)](https://drive.google.com/file/d/1-5KP7_OYIvDD_QXvIr5sDihVxZx1qJCN/view?usp=sharing)
+- [Full dataset (81986 equilibria, .mat, 8.6GB)](https://drive.google.com/file/d/1Gn_OrMzxPRkTk-i77--HiWmWZyd8i8ue/view?usp=sharing)
+- [Sample dataset (500 equilibria, .mat, 50MB)](https://drive.google.com/file/d/1-5KP7_OYIvDD_QXvIr5sDihVxZx1qJCN/view?usp=sharing)
 
 
 
