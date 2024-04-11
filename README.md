@@ -5,7 +5,7 @@ This repo contains a Collection of 81986 synthetic equilibria of an ITER-like de
 
 ![Alt text](https://github.com/matteobonotto/ITERlike_equilibrium_dataset/blob/main/fig/diverted_limiter.PNG)
 
-
+  
 
 ### Consume
 - Full dataset (81986 equilibria, .mat, 8.6GB) availble [here (Dropbox)](https://www.dropbox.com/scl/fi/6da6pqks1rovyncu1q93n/ITER_like_equilibrium_dataset.mat?rlkey=qnc9hz0pb6jdlq4ki7jz390xq&dl=0) or [here (Drive)](https://drive.google.com/file/d/1Gn_OrMzxPRkTk-i77--HiWmWZyd8i8ue/view?usp=sharing)
