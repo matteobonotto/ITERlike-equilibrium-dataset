@@ -12,6 +12,7 @@ This repo contains a Collection of 81986 synthetic equilibria of an ITER-like de
 - Sample dataset (500 equilibria, .mat, 50MB) availble [here (Drive)](https://drive.google.com/file/d/1-5KP7_OYIvDD_QXvIr5sDihVxZx1qJCN/view?usp=sharing)
 
 ### Example
+See the notebook ...
 
 ### Citations
 If you are using these data, we ask you to give us a citation!! Here are the papers:
