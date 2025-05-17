@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "iterlike_dataset"
+version = "0.1.0"
+description = "A collection of synthetic equilibria of an ITER-like device."
+readme = "README.md"
+authors = ["Matteo Bonotto <m.bonotto@outlook.com>"]
+license = "MIT"  # Specify the license
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+black = "^25.1.0"
+datasets = "^3.3.2"
+ipykernel = "^6.29.5"
+lightning = "^2.5.1.post0"
+matplotlib = "^3.10.1"
+mypy = "^1.15.0"
+plotly = "^6.0.0"
+poetry = "^2.1.1"
+scikit-learn = "^1.6.1"
+scipy="^1.15.2"
+tqdm = "^4.67.1"
+pandas = "^2.2.3"
+numpy ="^2.0.2"
+h5py = "^3.13.0"
+pytest = "^8.3.5"
+wandb = "^0.19.10"
+
+[tool.poetry.group.dev.dependencies]
+setuptools = "^69.5.1"  # Ensures proper package discovery
+
+[tool.poetry.build]
+generate-setup-file = true
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[tool.mypy]
+ignore_missing_imports = true
+disable_error_code = ["no-any-return"]
+strict = true
+
+[tool.pytest.ini_options]
+markers = [
+    "slow",
+]
+
