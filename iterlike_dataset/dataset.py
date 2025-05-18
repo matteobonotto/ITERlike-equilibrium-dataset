@@ -3,8 +3,9 @@ import json
 import os
 from pathlib import Path
 import numpy as np
-from typing import Dict, Any
+from typing import Dict, Any, Optional
 from dataclasses import dataclass, asdict
+import random
 
 from .types import _TypeNpFloat
 
@@ -47,3 +48,9 @@ class IterlikeDataset:
         for k, v in self.equil_data.features.items():
             s += f" {k}\n"
         return s
+
+    def plot_sample(
+        self, idx: Optional[int] = None, use_plotly: Optional[bool] = False
+    ):
+        if idx is None:
+            idx = random.randint(0, len(self))
