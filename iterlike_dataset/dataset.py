@@ -1,4 +1,4 @@
-from datasets import load_dataset
+from datasets import load_dataset, Dataset
 import json
 import os
 from pathlib import Path
@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import numpy as np
 
+from .equil import Equilibrium
 from .types import _TypeNpFloat
 from .constants import mu0
 
@@ -42,7 +43,7 @@ class IterlikeDataset:
         print("done")
 
     def __getitem__(self, idx: int) -> Any:
-        return self.equil_data[idx]
+        return Equilibrium(r=self.grid.r, z=self.grid.z, **self.equil_data[idx])
 
     def __len__(self) -> int:
         return len(self.equil_data)
@@ -52,6 +53,9 @@ class IterlikeDataset:
         for k, v in self.equil_data.features.items():
             s += f" {k}\n"
         return s
+
+    def get_huggingface_dataset(self) -> Dataset:
+        return self.equil_data
 
     def plot_sample(
         self, idx: Optional[int] = None, use_plotly: Optional[bool] = False
