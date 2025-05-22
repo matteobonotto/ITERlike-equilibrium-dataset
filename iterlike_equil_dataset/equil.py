@@ -1,26 +1,35 @@
-from dataclasses import dataclass
-from typing import Optional
+from dataclasses import dataclass, asdict
+from typing import Optional, Dict
 
 from .types import _TypeNpFloat
 from .constants import mu0
 
 
+
 @dataclass
-class Equilibrium:
-    _repr: str = ""
+class RZCoordinates:
     r: _TypeNpFloat
     z: _TypeNpFloat
+
+    def asdict(self) -> Dict[str, _TypeNpFloat]:
+        return asdict(self)
+
+@dataclass
+class Equilibrium:
     flux: _TypeNpFloat
     rhs: _TypeNpFloat
     mag_measures: _TypeNpFloat
     coils_current: _TypeNpFloat
     separatrix: _TypeNpFloat
     p_profile: _TypeNpFloat
-    is_diverted: bool
+    id_diverted: bool
+    grid: RZCoordinates
+    first_wall: RZCoordinates
     jphi: Optional[_TypeNpFloat] = None
+    _repr: str = ""
 
     def __post_init__(self):
-        self.jphi = -self.rhs / (mu0 * self.r)
+        self.jphi = -self.rhs / (mu0 * self.grid.r)
         # self._repr =
 
     def __repr__(self):

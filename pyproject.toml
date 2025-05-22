@@ -1,10 +1,11 @@
 [tool.poetry]
-name = "iterlike_dataset"
+name = "iterlike-equil-dataset"
 version = "0.1.0"
 description = "A collection of synthetic equilibria of an ITER-like device."
 readme = "README.md"
 authors = ["Matteo Bonotto <m.bonotto@outlook.com>"]
 license = "MIT"  # Specify the license
+packages = [{ include = "iterlike_equil_dataset" }]
 
 [build-system]
 requires = ["poetry-core"]
