@@ -22,7 +22,7 @@ class Equilibrium:
     coils_current: _TypeNpFloat
     separatrix: _TypeNpFloat
     p_profile: _TypeNpFloat
-    id_diverted: bool
+    is_diverted: bool
     grid: RZCoordinates
     first_wall: RZCoordinates
     jphi: Optional[_TypeNpFloat] = None

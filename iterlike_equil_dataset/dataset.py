@@ -17,7 +17,7 @@ root = Path(os.path.realpath(__file__))
 
 class IterlikeDataset:
 
-    def __init__(self, dataset_id: str = "matteobonotto/iterlike_equil_sample"):
+    def __init__(self, dataset_id: str = "matteobonotto/iterlike-equil-sample"):
         print("Loading eqilibrium data")
         self.equil_data = load_dataset(dataset_id, split="train").with_format("numpy")
 
