@@ -42,3 +42,6 @@ Thumbs.db
 
 venv/
 **.pyc
+
+
+poetry.lock

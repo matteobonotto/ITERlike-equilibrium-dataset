@@ -120,7 +120,7 @@ def plot_equilibrium(
     # plot p profile
     ax5.plot(np.linspace(0, 1, p_profile.shape[0]), p_profile.reshape(-1, 1))
     ax5.set_title("p profile")
-    ax3.set_xlabel("normalized radius")
+    ax5.set_xlabel("normalized radius")
     ax5.grid(True)
 
     plt.show()
