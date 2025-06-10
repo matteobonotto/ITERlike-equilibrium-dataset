@@ -13,10 +13,10 @@ build:
 
 # Utilities
 style:
-	poetry run black iterlike_dataset
+	poetry run black iterlike_equil_dataset
 
 type: 
-	poetry run mypy iterlike_dataset --config-file pyproject.toml
+	poetry run mypy iterlike_equil_dataset --config-file pyproject.toml
 
 
 

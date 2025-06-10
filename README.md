@@ -64,7 +64,7 @@ A full example on how to use the data can be found in the notebook [use_dataset.
 
 
 ### Citations
-If you foung the data useful, please consider citing these papert!
+If you foung the data useful, please consider citing these papers!
 ```
 @article{bonotto2022coupled,
   title={A coupled FEM-BEM approach for the solution of the free-boundary axi-symmetric plasma equilibrium problem},

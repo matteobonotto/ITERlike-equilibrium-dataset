@@ -5,7 +5,6 @@ from .types import _TypeNpFloat
 from .constants import mu0
 
 
-
 @dataclass
 class RZCoordinates:
     r: _TypeNpFloat
@@ -13,6 +12,7 @@ class RZCoordinates:
 
     def asdict(self) -> Dict[str, _TypeNpFloat]:
         return asdict(self)
+
 
 @dataclass
 class Equilibrium:

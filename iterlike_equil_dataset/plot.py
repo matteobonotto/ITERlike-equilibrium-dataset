@@ -9,6 +9,7 @@ import matplotlib.gridspec as gridspec
 from .types import _TypeNpFloat
 from .equil import Equilibrium
 
+
 def contourf(
     z: _TypeNpFloat,
     RR: _TypeNpFloat,
@@ -56,10 +57,7 @@ def contour_diff(
     plt.show()
 
 
-
-def plot_equilibrium(
-    equilibrium: Equilibrium
-) -> None:
+def plot_equilibrium(equilibrium: Equilibrium) -> None:
 
     flux = equilibrium.flux
     jphi = equilibrium.jphi
@@ -85,21 +83,21 @@ def plot_equilibrium(
 
     # Create figure and master GridSpec
     fig = plt.figure(figsize=(15, 10))
-    outer = gridspec.GridSpec(
-        nrows=1, ncols=3, width_ratios=[1, 1, 1.2], wspace=0.3
-    )
+    outer = gridspec.GridSpec(nrows=1, ncols=3, width_ratios=[1, 1, 1.2], wspace=0.3)
 
     # Contour plots (left and middle) take full height
     ax1 = fig.add_subplot(outer[0, 0])
-    contourf(flux, RR, ZZ, separatrix=separatrix, first_wall=first_wall, title="flux", ax=ax1)
+    contourf(
+        flux, RR, ZZ, separatrix=separatrix, first_wall=first_wall, title="flux", ax=ax1
+    )
 
     ax2 = fig.add_subplot(outer[0, 1])
-    contourf(jphi, RR, ZZ, separatrix=separatrix, first_wall=first_wall, title="jphi", ax=ax2)
+    contourf(
+        jphi, RR, ZZ, separatrix=separatrix, first_wall=first_wall, title="jphi", ax=ax2
+    )
 
     # Right column: nested GridSpec for vertical stacking
-    inner = gridspec.GridSpecFromSubplotSpec(
-        3, 1, subplot_spec=outer[0, 2], hspace=0.5
-    )
+    inner = gridspec.GridSpecFromSubplotSpec(3, 1, subplot_spec=outer[0, 2], hspace=0.5)
 
     ax3 = fig.add_subplot(inner[0])
     ax4 = fig.add_subplot(inner[1])

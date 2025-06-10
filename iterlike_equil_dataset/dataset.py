@@ -13,8 +13,6 @@ from .equil import Equilibrium, RZCoordinates
 root = Path(os.path.realpath(__file__))
 
 
-
-
 class IterlikeDataset:
 
     def __init__(self, dataset_id: str = "matteobonotto/iterlike-equil-sample"):
@@ -34,7 +32,9 @@ class IterlikeDataset:
         return self.equil_data
 
     def __getitem__(self, idx: int) -> Any:
-        return Equilibrium(grid=self.grid, first_wall=self.first_wall, **self.equil_data[idx])
+        return Equilibrium(
+            grid=self.grid, first_wall=self.first_wall, **self.equil_data[idx]
+        )
 
     def __len__(self) -> int:
         return len(self.equil_data)
@@ -44,4 +44,3 @@ class IterlikeDataset:
         for k, v in self.equil_data.features.items():
             s += f" {k}\n"
         return s
-
