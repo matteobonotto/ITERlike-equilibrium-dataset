@@ -20,20 +20,12 @@ def write_h5(
     data: Dict[str, Any],
     filename: str,
     dtype: str = "float64",
-    # compression : str = 'lzf',
-    # compression_opts : int = 1,
-    # verbose : bool = False,
 ) -> None:
-
     compression: str = "lzf"
-    # compression: int = 1  # -> gzip compression level
-
     kwargs = {
         "dtype": dtype,
         "compression": compression,
     }
-
-    # t_start = time.time()
     with h5py.File(filename + ".h5", "w") as hf:
         for key, item in data.items():
             hf.create_dataset(key, data=item, shape=item.shape, **kwargs)

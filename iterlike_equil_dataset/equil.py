@@ -1,4 +1,4 @@
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass, asdict, field
 from typing import Optional, Dict
 
 from .types import _TypeNpFloat
@@ -25,12 +25,11 @@ class Equilibrium:
     is_diverted: bool
     grid: RZCoordinates
     first_wall: RZCoordinates
-    jphi: Optional[_TypeNpFloat] = None
     _repr: str = ""
+    jphi: _TypeNpFloat = field(init=False)
 
-    def __post_init__(self):
+    def __post_init__(self) -> None:
         self.jphi = -self.rhs / (mu0 * self.grid.r)
-        # self._repr =
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return self._repr

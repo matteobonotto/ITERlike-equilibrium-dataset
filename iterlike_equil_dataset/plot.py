@@ -1,5 +1,6 @@
 from typing import Optional
 import matplotlib.pyplot as plt
+from matplotlib.axes import Axes
 import matplotlib.lines as mlines
 import numpy as np
 import random
@@ -7,7 +8,7 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 
 from .types import _TypeNpFloat
-from .equil import Equilibrium
+from .equil import Equilibrium, RZCoordinates
 
 
 def contourf(
@@ -69,7 +70,15 @@ def plot_equilibrium(equilibrium: Equilibrium) -> None:
     first_wall = equilibrium.first_wall
     separatrix = equilibrium.separatrix
 
-    def contourf(z, RR, ZZ, title="", separatrix=None, first_wall=None, ax=None):
+    def contourf(
+        z: _TypeNpFloat,
+        RR: _TypeNpFloat,
+        ZZ: _TypeNpFloat,
+        title: str = "",
+        separatrix: Optional[_TypeNpFloat] = None,
+        first_wall: Optional[RZCoordinates] = None,
+        ax: Optional[Axes] = None,
+    ) -> None:
         if ax is None:
             fig, ax = plt.subplots()
         c = ax.contourf(RR, ZZ, z, 20)
